@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_login";
+}
+
+<form asp-action ="login" asp-controller="Users">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" name="Name" >
+      
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" name="Password">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+</form>

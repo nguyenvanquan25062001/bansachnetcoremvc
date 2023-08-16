@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<banhang.Models.Category>
+<!--Header-->
+<header>
+	<!-- TOP HEADER -->
+	
+	<!-- /TOP HEADER -->
+	
+			<!-- row -->
+			
+			
+				<!-- SEARCH BAR -->
+				<div class="col-md-6">
+					<div class="header-search">
+						<form asp-controller="sanphams" asp-action="Index">
+							<select name="catid" class="input-select">
+								<option value="0"> Danh Mục</option>
+
+							
+								@foreach (var item in Model)
+								{
+								<option value="@item.Id">@item.Name</option>
+								}
+							</select>
+							<input class="input" name="keyworks" placeholder="Search here">
+							<button class="search-btn">Search</button>
+						</form>
+					</div>
+				</div>
+				<!-- /SEARCH BAR -->
+				
+	
+			<!-- row -->
+	
+		<!-- container -->
+
+</header>
+<!--Header-->

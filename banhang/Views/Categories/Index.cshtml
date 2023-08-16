@@ -1,0 +1,31 @@
+﻿@model IEnumerable<banhang.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<p>
+    
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class="col col-15">
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>
